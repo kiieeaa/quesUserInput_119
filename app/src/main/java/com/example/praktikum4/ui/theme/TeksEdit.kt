@@ -70,6 +70,24 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(16.dp)
             )
         }
-    }
+
+        Column(
+            modifier = Modifier
+                .verticalScroll(rememberScrollState()),
+
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+            ) {
+
+            }
+        }
+        }
 }
+
 
