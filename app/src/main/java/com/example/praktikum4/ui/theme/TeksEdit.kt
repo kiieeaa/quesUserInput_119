@@ -46,4 +46,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     var jenis by remember { mutableStateOf(value = "") }
     var status by remember { mutableStateOf(value = "") }
     var alamat by remember { mutableStateOf(value = "") }
+
+    val gender: List<String> = listOf("Laki-laki", "Perempuan")
+    val statkawin: List<String> = listOf("Janda", "Lajang", "Duda")
 }
