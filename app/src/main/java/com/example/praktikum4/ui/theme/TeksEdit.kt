@@ -211,6 +211,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         modifier = Modifier.padding(horizontal = 15.dp, vertical = 15.dp),
                         verticalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
+                        Text(text = "Nama   : " + nama, color = Color.White)
+                        Text(text = "Gender : " + jenis, color = Color.White)
+                        Text(text = "Status : " + status, color = Color.White)
+                        Text(text = "Alamat : " + alamat, color = Color.White)
 
 
                     }
