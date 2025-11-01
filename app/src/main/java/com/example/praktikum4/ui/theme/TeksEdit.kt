@@ -161,6 +161,22 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         }
                     }
 
+                    Text(
+                        text = "ALAMAT",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 12.sp,
+                        color = Color.Gray,
+                        modifier = Modifier.padding(top = 8.dp)
+                    )
+                    OutlinedTextField(
+                        value = textAlamat,
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = MaterialTheme.shapes.large,
+                        placeholder = { Text(text = "Alamat") },
+                        onValueChange = { textAlamat = it }
+                    )
+
 
 
 
