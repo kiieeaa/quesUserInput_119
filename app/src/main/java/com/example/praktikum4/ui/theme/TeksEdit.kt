@@ -201,14 +201,24 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 thickness = dimensionResource(R.dimen.divier_tipis),
                 color = Color.DarkGray
             )
+            if (nama.isNotEmpty()) {
+                ElevatedCard(
+                    elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.Black),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Column(
+                        modifier = Modifier.padding(horizontal = 15.dp, vertical = 15.dp),
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
 
 
-
-
-
-        }
+                    }
+                }
             }
         }
+    }
+}
 
 
 
