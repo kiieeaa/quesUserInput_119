@@ -107,6 +107,33 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         placeholder = { Text(text = "Isian nama lengkap") },
                         onValueChange = { textNama = it }
                     )
+                    Text(
+                        text = "JENIS KELAMIN",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 12.sp,
+                        color = Color.Gray,
+                        modifier = Modifier.padding(top = 8.dp)
+                    )
+                    Column {
+                        gender.forEach { item ->
+                            Row(
+                                modifier = Modifier
+                                    .selectable(
+                                        selected = textJK == item,
+                                        onClick = { textJK = item }
+                                    )
+                                    .fillMaxWidth(),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                RadioButton(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item }
+                                )
+                                Text(item)
+                            }
+                        }
+                    }
+
 
 
                 }
