@@ -86,9 +86,19 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
             ) {
 
+                Column(
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth(),
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    horizontalAlignment = Alignment.Start
+                ) {
+
+
+                }
             }
         }
-        }
+    }
 }
 
 
