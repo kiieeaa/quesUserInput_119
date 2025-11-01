@@ -49,4 +49,27 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 
     val gender: List<String> = listOf("Laki-laki", "Perempuan")
     val statkawin: List<String> = listOf("Janda", "Lajang", "Duda")
+
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFFF0E6FF)), // Commit 13: ubah warna latar belakang jadi ungu muda
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color(0xFF6200EE)),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(
+                text = "Formulir Pendaftaran",
+                color = Color.White,
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(16.dp)
+            )
+        }
+    }
 }
+
