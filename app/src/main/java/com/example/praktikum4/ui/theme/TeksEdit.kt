@@ -34,3 +34,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.praktikum4.R
+
+@Composable
+fun FormDataDiri(modifier: Modifier = Modifier) {
+    var textNama by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
+    var textJK by remember { mutableStateOf("") }
+    var textstat by remember { mutableStateOf("") }
+
+    var nama by remember { mutableStateOf(value = "") }
+    var jenis by remember { mutableStateOf(value = "") }
+    var status by remember { mutableStateOf(value = "") }
+    var alamat by remember { mutableStateOf(value = "") }
+}
