@@ -176,6 +176,22 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         placeholder = { Text(text = "Alamat") },
                         onValueChange = { textAlamat = it }
                     )
+                    Button(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 16.dp),
+                        enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty() && textJK.isNotEmpty() && textstat.isNotEmpty(),
+                        onClick = {
+                            nama = textNama
+                            jenis = textJK
+                            status = textstat
+                            alamat = textAlamat
+                        }
+                    ) {
+                        Text("Submit")
+                    }
+                }
+            }
 
 
 
@@ -183,7 +199,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 }
             }
         }
-    }
-}
+
+
 
 
