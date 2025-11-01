@@ -73,7 +73,8 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 
         Column(
             modifier = Modifier
-                .verticalScroll(rememberScrollState()),
+                .verticalScroll(rememberScrollState())
+                .padding(16.dp),
 
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(16.dp)
